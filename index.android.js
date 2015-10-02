@@ -17,7 +17,7 @@ var caen_labwatch = React.createClass({
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to CAEN Labwatch!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.android.js
@@ -41,6 +41,7 @@ var styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    color: '#FF0000'
   },
   instructions: {
     textAlign: 'center',
