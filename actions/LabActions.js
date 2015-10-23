@@ -1,5 +1,5 @@
 var alt = require('../alt');
-var LabSource = require('../sources/LabSource').
+var LabSource = require('../sources/LabSource');
 
 class LabActions {
     updateLabs(labs) {
