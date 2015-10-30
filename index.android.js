@@ -6,6 +6,7 @@
 
 var React = require('react-native');
 var LabView = require('./components/LabView.js');
+var LabActions = require('./actions/LabActions.js');
 var LabStore = require('./stores/LabStore.js');
 var {
     AppRegistry,
@@ -22,6 +23,7 @@ var caen_labwatch = React.createClass({
 
     componentDidMount: function() {
         LabStore.listen(this.onChange);
+        LabActions.fetchLabs();
     },
 
     onChange: function(state) {

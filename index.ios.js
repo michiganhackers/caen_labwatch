@@ -16,8 +16,9 @@ var caen_labwatch = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
+
+       <Text style={styles.top_of}>
+          Welcome to Computer Finder!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
@@ -35,6 +36,7 @@ var styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
@@ -47,6 +49,12 @@ var styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  top_of: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    backgroundColor: '#F5FCFF',
+    paddingTop: 50,
   },
 });
 
