@@ -1,8 +1,11 @@
 {
-  "nativescript": {
-    "id": "org.nativescript.caenlabwatch"
-  },
-  "dependencies": {
-    "tns-core-modules": "1.4.0"
-  }
+	"nativescript": {
+		"id": "org.nativescript.caenlabwatch",
+		"tns-android": {
+			"version": "1.4.0"
+		}
+	},
+	"dependencies": {
+		"tns-core-modules": "1.4.0"
+	}
 }

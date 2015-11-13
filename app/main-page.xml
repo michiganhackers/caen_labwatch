@@ -1,7 +1,10 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <StackLayout>
-    <Label text="Tap the button" class="title"/>
-    <Button text="TAP" tap="{{ tapAction }}" />
-    <Label text="{{ message }}" class="message" textWrap="true"/>
-  </StackLayout>
+    <ListView items="{{ labs }}">
+        <ListView.itemTemplate>
+            <GridLayout height="50" columns="*, auto">
+                <Label verticalAlignment="center" text="{{ room }}"/>
+                <Label col="1" verticalAlignment="center" text="{{ ratio }}"/>
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
 </Page>
