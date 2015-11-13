@@ -27,8 +27,7 @@ var refreshLabTotals = function() {
 		for (roomJSON in building[room]) {
 		    resultsArray.push({
 			room: roomJSON.name,
-			total: roomJSON.total,
-			in_use: roomJSON.in_use
+			ratio: "" + roomJSON.total + " / " + roomJSON.in_use,
 		    });
 		}
 	    }
@@ -36,6 +35,7 @@ var refreshLabTotals = function() {
 	return resultsArray;
     }, function (e) {
 	//Argument (e) is Error!
+	console.error(e);
     });   
 }
 
